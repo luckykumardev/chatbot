@@ -11,7 +11,7 @@ public class chatbot {
 
 	@GetMapping("/index")
 	public String test() {
-		return "/index";
+		return "index";
 	}
 
 	@GetMapping("/help")
@@ -20,6 +20,7 @@ public class chatbot {
 	}
 	
 	@PostMapping("/help")
+	@ResponseBody
 	public String help2() {
 		return "<div>that was funny</div>";
 	}

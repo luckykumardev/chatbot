@@ -73,8 +73,9 @@
 
 		function submitChoice(el) {
 			var choice = el.dataset.choice;
+			console.log(choice);
 			$.post("/help", {choice:choice}, function(result){
-				 $(result).appendTo($("conversation"));
+				 $(result).appendTo($("#convesation"));
 			})
 		}
 	</script>
