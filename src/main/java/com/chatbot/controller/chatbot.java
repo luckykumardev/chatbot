@@ -22,7 +22,7 @@ public class chatbot {
 	@PostMapping("/help")
 	@ResponseBody
 	public String help2() {
-		return "<div>that was funny</div>";
+		return "<div>chalgya</div>";
 	}
 	
 }
